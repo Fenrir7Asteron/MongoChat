@@ -1,0 +1,13 @@
+{% block content %}
+<h1>Mongo chat</h1><br>
+<pre>
+    {{log}}
+</pre>
+<form action="" method="post" name="login">
+    {{form.hidden_tag()}}
+    <p>
+        Name: {{form.name(size=20)}} Message: {{form.message(size=60)}}<br>
+    </p>
+    <p><input type="submit" value="Submit"></p>
+</form>
+{% endblock %}
